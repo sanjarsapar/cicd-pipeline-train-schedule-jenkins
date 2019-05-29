@@ -6,6 +6,7 @@ pipeline{
                 echo "=== executing Build ==="
                 sh './gradlew build --no-daemon'
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
+                sh 'ls -l'
             }
             post{
                 always{
