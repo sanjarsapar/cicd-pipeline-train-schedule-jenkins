@@ -7,7 +7,7 @@ pipeline{
                 sh './gradlew build --no-daemon'
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
                 sh 'ls -l'
-                echo 'tadaaaaa'
+                echo 'SUCCESSS!'
             }
             post{
                 always{
